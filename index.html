@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cindy López Accesorios · Hechos a mano · Caucasia</title>
+<meta name="description" content="Cindy López Accesorios: tejidos en crochet, llaveros, strap para celular, llaveros personalizados para placas, resina, pines, velas y denarios. Hechos a mano. Pide por WhatsApp 333 268 4767.">
+<meta name="theme-color" content="#d94f86">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Cindy López Accesorios · Hechos a mano">
+<meta property="og:description" content="Crochet, llaveros, strap para celular, resina, pines, velas y denarios. Colores, detalles y mucha ternura en cada accesorio.">
+<meta property="og:url" content="https://cindy-lopez-accesorios.netlify.app/">
+<meta property="og:image" content="https://cindy-lopez-accesorios.netlify.app/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cindy-lopez-accesorios.netlify.app/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--rosa:#d94f86;--rosa2:#f7c6d9;--crema:#fdf9f3;--cafe:#4a2c22;--oro:#c9962b;--verde:#6a9a4c;--lila:#9b6cc9;--txt:#3a2a28}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--crema);color:var(--txt);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+/* barra */
+header{position:sticky;top:0;z-index:50;background:rgba(253,249,243,.92);backdrop-filter:blur(10px);border-bottom:1px solid #f1e1d6}
+.bar{display:flex;align-items:center;gap:10px;height:60px}
+.bar img{width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--rosa2)}
+.marca{white-space:nowrap;font-family:'Dancing Script',cursive;font-size:1.55rem;font-weight:700;color:var(--cafe);line-height:1}
+.marca small{display:block;font-family:Poppins;font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rosa);font-weight:600}
+.sp{flex:1}
+.btn-s{border:1.5px solid var(--rosa);color:var(--rosa);background:#fff;border-radius:99px;padding:6px 12px;font:600 .78rem Poppins;cursor:pointer}
+.btn-s.on{background:var(--rosa);color:#fff}
+#cartBtn{position:relative}
+#cartN{position:absolute;top:-6px;right:-6px;background:var(--cafe);color:#fff;border-radius:99px;font-size:.66rem;min-width:18px;height:18px;display:grid;place-items:center;padding:0 4px}
+/* hero */
+.hero{position:relative;min-height:86vh;display:flex;align-items:flex-end;overflow:hidden;color:#fff}
+.slides{position:absolute;inset:0}
+.slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.12);transition:opacity 1.4s ease,transform 7s ease}
+.slides img.on{opacity:1;transform:scale(1)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(74,44,34,.05) 20%,rgba(74,44,34,.85) 100%)}
+.hero .in{position:relative;z-index:2;padding:40px 18px 46px;max-width:1100px;margin:0 auto;width:100%}
+.chip{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.5);backdrop-filter:blur(6px);padding:6px 14px;border-radius:99px;font-size:.78rem;font-weight:600;letter-spacing:.04em}
+.hero h1{font-family:'Dancing Script',cursive;font-size:clamp(3rem,11vw,5.6rem);line-height:.95;margin:14px 0 6px;text-shadow:0 4px 24px rgba(0,0,0,.35)}
+.hero p{max-width:560px;font-size:1.02rem;opacity:.95}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{display:inline-block;border:0;border-radius:99px;padding:13px 22px;font:700 .95rem Poppins;cursor:pointer;transition:transform .2s}
+.btn:active{transform:scale(.96)}
+.btn.p{background:var(--rosa);color:#fff;box-shadow:0 8px 24px rgba(217,79,134,.45)}
+.btn.w{background:#fff;color:var(--cafe)}
+.btn.g{background:#25a35a;color:#fff}
+.dots{display:flex;gap:6px;margin-top:22px}
+.dots i{width:22px;height:4px;border-radius:4px;background:rgba(255,255,255,.4);transition:.4s}
+.dots i.on{background:#fff;width:40px}
+/* cinta */
+.cinta{background:var(--rosa);color:#fff;overflow:hidden;white-space:nowrap;padding:11px 0;font-weight:600;font-size:.9rem}
+.cinta div{display:inline-block;animation:corre 32s linear infinite}
+.cinta span{margin:0 22px}
+.cinta span:nth-child(odd){font-family:'Dancing Script';font-size:1.25rem}
+@keyframes corre{to{transform:translateX(-50%)}}
+section{padding:60px 0}
+.ant{color:var(--rosa);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}
+h2{font-size:clamp(1.7rem,5vw,2.5rem);line-height:1.15;margin:8px 0 10px;color:var(--cafe)}
+h2 b{font-family:'Dancing Script';font-size:1.25em;color:var(--rosa)}
+.lead{max-width:640px;color:#6b5650}
+/* hoy */
+.hoy{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-top:24px}
+.hoyFoto{position:relative;border-radius:24px;overflow:hidden;min-height:340px;box-shadow:0 18px 40px rgba(74,44,34,.18)}
+.hoyFoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:zoom 12s ease-in-out infinite alternate}
+@keyframes zoom{to{transform:scale(1.1)}}
+.hoyFoto .tx{position:absolute;left:0;right:0;bottom:0;padding:22px;background:linear-gradient(transparent,rgba(74,44,34,.9));color:#fff}
+.hoyFoto .tx small{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.72rem;color:var(--rosa2)}
+.hoyFoto .tx h3{font-size:1.5rem;margin:4px 0}
+.hoyCol{display:grid;gap:14px}
+.card{background:#fff;border-radius:20px;padding:18px 20px;box-shadow:0 6px 20px rgba(74,44,34,.07);border:1px solid #f3e6dc}
+.card small{color:var(--rosa);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.7rem}
+.card .big{font-size:1.4rem;font-weight:800;color:var(--cafe);margin-top:4px}
+.cuenta{display:flex;gap:10px;margin-top:8px}
+.cuenta div{flex:1;background:var(--crema);border-radius:14px;text-align:center;padding:8px 4px}
+.cuenta b{display:block;font-size:1.5rem;color:var(--rosa)}
+.cuenta span{font-size:.7rem;color:#8a7570}
+.frase{font-family:'Dancing Script';font-size:1.5rem;color:var(--cafe);line-height:1.25;margin-top:6px}
+/* catálogo */
+.filtros{display:flex;gap:8px;overflow-x:auto;padding:18px 0 6px;scrollbar-width:none}
+.filtros::-webkit-scrollbar{display:none}
+.filtros button{flex:none;border:1.5px solid #ead8cc;background:#fff;border-radius:99px;padding:8px 16px;font:600 .84rem Poppins;color:var(--cafe);cursor:pointer}
+.filtros button.on{background:var(--cafe);color:#fff;border-color:var(--cafe)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin-top:16px}
+.prod{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 8px 22px rgba(74,44,34,.08);display:flex;flex-direction:column;opacity:0;transform:translateY(24px);transition:.6s}
+.prod.vis{opacity:1;transform:none}
+.prod .ph{aspect-ratio:1;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--rosa2),#fde7c8)}
+.prod .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.prod:hover .ph img{transform:scale(1.08)}
+.prod .ph .ph-t{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;font-family:'Dancing Script';font-size:2rem;color:var(--cafe)}
+.tag{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.92);color:var(--rosa);font-weight:700;font-size:.68rem;padding:4px 10px;border-radius:99px;letter-spacing:.05em;text-transform:uppercase}
+.prod .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.prod h3{font-size:1.02rem;color:var(--cafe)}
+.prod p{font-size:.85rem;color:#7b6660;flex:1}
+.prod .pr{font-size:.78rem;color:var(--verde);font-weight:700}
+.prod button{margin-top:6px;border:0;background:var(--rosa);color:#fff;border-radius:14px;padding:10px;font:700 .86rem Poppins;cursor:pointer}
+/* personalizador */
+.perso{background:linear-gradient(135deg,#fff 0%,#fdeef4 100%)}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;align-items:center}
+.form{display:grid;gap:12px}
+.form label{font-size:.8rem;font-weight:600;color:var(--cafe)}
+.form input,.form select,.form textarea{width:100%;border:1.5px solid #ead8cc;border-radius:14px;padding:11px 13px;font:500 .95rem Poppins;background:#fff;margin-top:4px}
+.colores{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+.colores button{width:36px;height:36px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1.5px #ead8cc;cursor:pointer}
+.colores button.on{box-shadow:0 0 0 3px var(--cafe)}
+.prevBox{position:relative;border-radius:26px;overflow:hidden;min-height:360px;display:grid;place-items:center;background:url(fotos/resina-letras.jpg) center/cover}
+.prevBox:before{content:"";position:absolute;inset:0;background:rgba(253,249,243,.55);backdrop-filter:blur(3px)}
+.llavero{position:relative;display:flex;flex-direction:column;align-items:center}
+.aro{width:64px;height:64px;border-radius:50%;border:7px solid #b9b9b9;margin-bottom:-10px;z-index:1}
+.disco{width:220px;height:220px;border-radius:50%;display:grid;place-items:center;text-align:center;padding:24px;box-shadow:inset 0 0 30px rgba(255,255,255,.7),0 18px 40px rgba(0,0,0,.2);position:relative;overflow:hidden;animation:mece 3.2s ease-in-out infinite;transform-origin:top center}
+.disco:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 25% 20%,rgba(255,255,255,.8) 0 6%,transparent 7%),radial-gradient(circle at 75% 70%,rgba(255,255,255,.5) 0 3%,transparent 4%),radial-gradient(circle at 60% 25%,rgba(255,215,90,.8) 0 2%,transparent 3%),radial-gradient(circle at 30% 75%,rgba(255,215,90,.8) 0 2.4%,transparent 3.4%)}
+@keyframes mece{50%{transform:rotate(6deg)}}
+.disco b{font-family:'Dancing Script';font-size:2.4rem;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.25);word-break:break-word;line-height:1;position:relative;z-index:1}
+.disco i{font-style:normal;font-weight:800;font-size:1rem;letter-spacing:.2em;color:#fff;position:relative;z-index:1;margin-top:6px;display:block}
+/* galería */
+.gal{columns:3 220px;column-gap:12px;margin-top:24px}
+.gal img{width:100%;border-radius:18px;margin-bottom:12px;cursor:zoom-in;transition:transform .4s;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.gal img:hover{transform:scale(1.02)}
+#lb{position:fixed;inset:0;background:rgba(30,18,14,.92);z-index:90;display:none;place-items:center;padding:20px}
+#lb.on{display:grid}
+#lb img{max-height:88vh;border-radius:16px}
+/* contacto */
+.contacto{background:var(--cafe);color:#fff}
+.contacto h2{color:#fff}.contacto .lead{color:#e9d8cf}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+.kgrid a,.kgrid div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:18px}
+.kgrid small{color:var(--rosa2);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.7rem}
+.kgrid b{display:block;font-size:1.1rem;margin-top:4px}
+footer{background:#2e1b15;color:#cdb9b0;text-align:center;padding:26px 18px 100px;font-size:.84rem}
+footer b{color:#fff}
+#lic{display:inline-block;margin-top:10px;padding:5px 12px;border-radius:99px;background:rgba(106,154,76,.25);color:#cfe8bd;font-weight:600;font-size:.75rem}
+#lic.v{background:#b3261e;color:#fff}
+/* flotante y carrito */
+.flot{white-space:nowrap;position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;background:#25a35a;color:#fff;border-radius:99px;padding:14px 26px;font-weight:700;box-shadow:0 10px 30px rgba(37,163,90,.45);animation:lat 2.4s infinite}
+@keyframes lat{50%{box-shadow:0 10px 30px rgba(37,163,90,.45),0 0 0 10px rgba(37,163,90,.12)}}
+#cart{position:fixed;inset:0;z-index:80;background:rgba(30,18,14,.55);display:none}
+#cart.on{display:block}
+.panel{position:absolute;right:0;top:0;bottom:0;width:min(420px,100%);background:#fff;padding:22px;overflow:auto;display:flex;flex-direction:column;gap:12px;animation:ent .35s}
+@keyframes ent{from{transform:translateX(100%)}}
+.item{display:flex;gap:10px;align-items:center;border-bottom:1px solid #f1e5dc;padding-bottom:10px}
+.item img,.item .mini{width:56px;height:56px;border-radius:12px;object-fit:cover;background:var(--rosa2);flex:none}
+.item .n{flex:1;font-size:.88rem;font-weight:600;color:var(--cafe)}
+.item .n small{display:block;font-weight:400;color:#8a7570}
+.q{display:flex;align-items:center;gap:6px}
+.q button{width:28px;height:28px;border-radius:8px;border:1px solid #ead8cc;background:#fff;font-weight:700;cursor:pointer}
+#toast{position:fixed;top:74px;left:50%;transform:translate(-50%,-30px);background:var(--cafe);color:#fff;padding:10px 18px;border-radius:99px;font-size:.86rem;font-weight:600;opacity:0;transition:.35s;z-index:99;pointer-events:none}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media(max-width:760px){.grid{grid-template-columns:1fr 1fr;gap:12px}.prod .bd{padding:10px 12px 12px}.prod h3{font-size:.92rem}.prod p{font-size:.78rem}.gal{columns:2}.marca{font-size:1.2rem}.marca small{display:none}.btn-s{padding:5px 9px}.bar{gap:7px}.bar img{width:36px;height:36px}.hoy,.pgrid{grid-template-columns:1fr}.hoyFoto{min-height:300px}.bar .hide{display:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <img src="icon-192.png" alt="Cindy López Accesorios">
+  <div class="marca">Cindy López<small data-t="hm">Accesorios hechos a mano</small></div>
+  <div class="sp"></div>
+  <button class="btn-s on" id="bES" onclick="idioma('es')">ES</button>
+  <button class="btn-s" id="bEN" onclick="idioma('en')">EN</button>
+  <button class="btn-s" id="cartBtn" onclick="abrir()"><span data-t="nPed">Pedido</span><span id="cartN">0</span></button>
+</div></header>
+
+<div class="hero">
+  <div class="slides" id="slides">
+    <img src="fotos/gato-gris.jpg" alt="" class="on">
+    <img src="fotos/flyer-espejo.jpg" alt="">
+    <img src="fotos/straps.jpg" alt="">
+    <img src="fotos/capibaras-tricolor.jpg" alt="">
+    <img src="fotos/denarios.jpg" alt="">
+    <img src="fotos/resina-letras.jpg" alt="">
+  </div>
+  <div class="in">
+    <span class="chip" data-t="chip">Caucasia · ExpoCaucasia 2026</span>
+    <h1>Cindy López</h1>
+    <p data-t="sub">Tejidos en crochet, llaveros, strap para celular, llaveros personalizados para placas, resina, pines y velas. Colores, detalles y mucha ternura en cada accesorio.</p>
+    <div class="cta">
+      <a class="btn p" href="#catalogo" data-t="ver">Ver catálogo</a>
+      <a class="btn w" href="#" onclick="hola();return false" data-t="esc">Escribir por WhatsApp</a>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</div>
+
+<div class="cinta"><div id="cinta"></div></div>
+
+<section id="hoy"><div class="wrap">
+  <span class="ant" data-t="hAnt">Hoy en Cindy López Accesorios</span>
+  <h2 id="hoyFecha"></h2>
+  <div class="hoy">
+    <div class="hoyFoto"><img id="hoyImg" src="" alt=""><div class="tx"><small data-t="h1s">El detalle del día</small><h3 id="hoyNom"></h3><p id="hoyDesc"></p></div></div>
+    <div class="hoyCol">
+      <div class="card"><small data-t="h2s">Faltan para Navidad</small><div class="cuenta" id="cuenta"></div></div>
+      <div class="card"><small data-t="h3s">Idea para regalar</small><div class="frase" id="hoyFrase"></div></div>
+      <div class="card"><small data-t="h4s">Hora en Caucasia</small><div class="big" id="reloj"></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="catalogo" style="background:#fff"><div class="wrap">
+  <span class="ant" data-t="cAnt">Catálogo</span>
+  <h2 data-t="cTit">Todo <b>hecho a mano</b></h2>
+  <p class="lead" data-t="cLead">Agrega lo que te guste al pedido y envíalo por WhatsApp. Cindy te confirma precio, colores disponibles y entrega.</p>
+  <div class="filtros" id="filtros"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="perso" id="perso"><div class="wrap">
+  <span class="ant" data-t="pAnt">Personalizados en resina</span>
+  <h2 data-t="pTit">Tu llavero, <b>con tu nombre</b></h2>
+  <p class="lead" data-t="pLead">Escribe el nombre, la inicial o la placa de tu moto o carro, elige el color y mira cómo quedaría. Cindy lo hace a mano con brillos y detalles.</p>
+  <div class="pgrid">
+    <div class="form">
+      <div><label data-t="fTipo">Tipo de llavero</label>
+        <select id="fTipo" onchange="prev()"></select></div>
+      <div><label data-t="fNom">Nombre, inicial o placa</label>
+        <input id="fNom" maxlength="14" value="Cindy" oninput="prev()"></div>
+      <div><label data-t="fCol">Color</label><div class="colores" id="colores"></div></div>
+      <div><label data-t="fNota">Nota para Cindy (fecha, ocasión)</label>
+        <textarea id="fNota" rows="2"></textarea></div>
+      <button class="btn p" onclick="addPerso()" data-t="pAdd">Agregar al pedido</button>
+    </div>
+    <div class="prevBox"><div class="llavero"><div class="aro"></div><div class="disco" id="disco"><div><b id="dTxt">Cindy</b><i id="dSub"></i></div></div></div></div>
+  </div>
+</div></section>
+
+<section id="galeria"><div class="wrap">
+  <span class="ant" data-t="gAnt">Galería</span>
+  <h2 data-t="gTit">Así se ven <b>de cerca</b></h2>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section class="contacto" id="contacto"><div class="wrap">
+  <span class="ant" style="color:var(--rosa2)" data-t="kAnt">Contacto</span>
+  <h2 data-t="kTit">Apoya lo hecho a mano</h2>
+  <p class="lead" data-t="kLead">Lleva contigo creatividad y estilo. Escríbele a Cindy para pedidos, encargos y regalos.</p>
+  <div class="kgrid">
+    <a href="#" onclick="hola();return false"><small>WhatsApp</small><b>333 268 4767</b></a>
+    <a href="https://www.instagram.com/cindylopezaccesorios/" target="_blank" rel="noopener"><small>Instagram</small><b>@cindylopezaccesorios</b></a>
+    <div><small data-t="kDir">Ciudad</small><b>Caucasia, Antioquia</b></div>
+  </div>
+</div></section>
+
+<footer>
+  <div><span data-t="hecho">App hecha por</span> <b>Vibras Positivas HM</b> · <a href="https://wa.me/573117700431" target="_blank" rel="noopener">311 770 0431</a></div>
+  <div id="lic"></div>
+</footer>
+
+<a class="flot" href="#" onclick="abrir();return false" data-t="fl">Pedir por WhatsApp</a>
+
+<div id="cart" onclick="if(event.target===this)cerrar()"><div class="panel">
+  <div style="display:flex;align-items:center"><h2 style="font-size:1.5rem;margin:0" data-t="tuP">Tu pedido</h2><div class="sp"></div><button class="btn-s" onclick="cerrar()" data-t="cerrar">Cerrar</button></div>
+  <div id="items"></div>
+  <input id="cNom" placeholder="Tu nombre" style="border:1.5px solid #ead8cc;border-radius:14px;padding:11px 13px;font:500 .95rem Poppins">
+  <input id="cDir" placeholder="Barrio o dirección de entrega" style="border:1.5px solid #ead8cc;border-radius:14px;padding:11px 13px;font:500 .95rem Poppins">
+  <button class="btn g" onclick="enviar()" data-t="env">Enviar pedido por WhatsApp</button>
+  <button class="btn-s" onclick="vaciar()" data-t="vac">Vaciar pedido</button>
+</div></div>
+
+<div id="lb" onclick="this.classList.remove('on')"><img id="lbImg" src="" alt=""></div>
+<div id="toast"></div>
+
+<script>
+const WA="573332684767";
+const T={
+es:{hm:"Accesorios hechos a mano",nPed:"Pedido",chip:"Caucasia · ExpoCaucasia 2026",sub:"Tejidos en crochet, llaveros, strap para celular, llaveros personalizados para placas, resina, pines y velas. Colores, detalles y mucha ternura en cada accesorio.",ver:"Ver catálogo",esc:"Escribir por WhatsApp",hAnt:"Hoy en Cindy López Accesorios",h1s:"El detalle del día",h2s:"Faltan para Navidad",h3s:"Idea para regalar",h4s:"Hora en Caucasia",cAnt:"Catálogo",cTit:"Todo <b>hecho a mano</b>",cLead:"Agrega lo que te guste al pedido y envíalo por WhatsApp. Cindy te confirma precio, colores disponibles y entrega.",pAnt:"Personalizados en resina",pTit:"Tu llavero, <b>con tu nombre</b>",pLead:"Escribe el nombre, la inicial o la placa de tu moto o carro, elige el color y mira cómo quedaría. Cindy lo hace a mano con brillos y detalles.",fTipo:"Tipo de llavero",fNom:"Nombre, inicial o placa",fCol:"Color",fNota:"Nota para Cindy (fecha, ocasión)",pAdd:"Agregar al pedido",gAnt:"Galería",gTit:"Así se ven <b>de cerca</b>",kAnt:"Contacto",kTit:"Apoya lo hecho a mano",kLead:"Lleva contigo creatividad y estilo. Escríbele a Cindy para pedidos, encargos y regalos.",kDir:"Ciudad",hecho:"App hecha por",fl:"Pedir por WhatsApp",tuP:"Tu pedido",cerrar:"Cerrar",env:"Enviar pedido por WhatsApp",vac:"Vaciar pedido",cNom:"Tu nombre",cDir:"Barrio o dirección de entrega",todos:"Todo",agregar:"Agregar al pedido",precio:"Precio por WhatsApp",vacio:"Tu pedido está vacío. Agrega algo del catálogo.",ok:"Agregado al pedido",lic:"Licencia vigente hasta el 6 de mayo de 2027",licV:"Licencia vencida · renueva con Vibras Positivas HM",dias:"días",horas:"horas",min:"min",hola:"Hola Cindy, vi tu app de Cindy López Accesorios y quiero información.",ped:"Hola Cindy, quiero hacer este pedido:",nombre:"Nombre",entrega:"Entrega",perso:"Llavero personalizado",nota:"Nota",
+cinta:["Hecho a mano","Crochet","Strap para celular","Llaveros para placas","Resina","Pines","Velas aromatizantes","Denarios","Cada detalle es único","Ideal para regalar"],
+tipos:["Disco con nombre","Letra inicial","Llavero para placa"],
+frases:["Un gatito tejido para quien siempre te saca una sonrisa.","Un llavero con su nombre: el regalo que nunca se pierde.","Un denario de cristal para la abuela, la mamá o la madrina.","Un strap de colores para la amiga que vive con el celular en la mano.","Girasoles tejidos que no se marchitan: amor que dura.","Un llavero para la placa de la moto: estilo y orden.","Una capibara tejida para los que aman lo tierno.","Una mochilita tricolor para el que lleva a Colombia en el corazón.","Un espejo con girasoles para el cuarto de alguien especial.","Detalles navideños hechos a mano: para el amigo secreto."]},
+en:{hm:"Handmade accessories",nPed:"Order",chip:"Caucasia · ExpoCaucasia 2026",sub:"Crochet pieces, keychains, phone straps, custom license-plate keychains, resin, pins and candles. Color, detail and lots of love in every accessory.",ver:"See catalog",esc:"Message on WhatsApp",hAnt:"Today at Cindy López Accesorios",h1s:"Pick of the day",h2s:"Countdown to Christmas",h3s:"Gift idea",h4s:"Time in Caucasia",cAnt:"Catalog",cTit:"Everything <b>handmade</b>",cLead:"Add what you like to your order and send it by WhatsApp. Cindy confirms price, available colors and delivery.",pAnt:"Custom resin pieces",pTit:"Your keychain, <b>your name</b>",pLead:"Type a name, initial or your license plate, choose the color and preview it. Cindy makes it by hand with glitter and details.",fTipo:"Keychain type",fNom:"Name, initial or plate",fCol:"Color",fNota:"Note for Cindy (date, occasion)",pAdd:"Add to order",gAnt:"Gallery",gTit:"Up <b>close</b>",kAnt:"Contact",kTit:"Support handmade",kLead:"Carry creativity and style with you. Message Cindy for orders, custom pieces and gifts.",kDir:"City",hecho:"App made by",fl:"Order on WhatsApp",tuP:"Your order",cerrar:"Close",env:"Send order by WhatsApp",vac:"Clear order",cNom:"Your name",cDir:"Neighborhood or delivery address",todos:"All",agregar:"Add to order",precio:"Price on WhatsApp",vacio:"Your order is empty. Add something from the catalog.",ok:"Added to order",lic:"License valid until May 6, 2027",licV:"License expired · renew with Vibras Positivas HM",dias:"days",horas:"hours",min:"min",hola:"Hi Cindy, I saw your Cindy López Accesorios app and I'd like information.",ped:"Hi Cindy, I'd like to place this order:",nombre:"Name",entrega:"Delivery",perso:"Custom keychain",nota:"Note",
+cinta:["Handmade","Crochet","Phone straps","Plate keychains","Resin","Pins","Scented candles","Rosaries","Every detail is unique","Perfect gift"],
+tipos:["Name disc","Initial letter","License-plate keychain"],
+frases:["A crochet kitty for the one who always makes you smile.","A keychain with their name: the gift that never gets lost.","A crystal rosary for grandma, mom or godmother.","A colorful strap for the friend who lives on her phone.","Crochet sunflowers that never wilt: love that lasts.","A keychain for the motorcycle plate: style and order.","A crochet capybara for lovers of all things cute.","A tricolor mini bag for those with Colombia in their heart.","A sunflower mirror for someone special's room.","Handmade Christmas details: perfect for Secret Santa."]}};
+const CATS={crochet:["Crochet","Crochet"],strap:["Strap para celular","Phone straps"],resina:["Resina y placas","Resin & plates"],fe:["Denarios","Rosaries"],hogar:["Velas y pines","Candles & pins"]};
+const P=[
+{id:"gato-gris",c:"crochet",f:"fotos/gato-gris.jpg",n:["Llavero gatito gris","Gray kitty keychain"],d:["Carita de gato tejida en crochet, con argolla dorada.","Crochet kitty face with gold ring."]},
+{id:"gato-beige",c:"crochet",f:"fotos/gato-beige.jpg",n:["Llavero gatito beige","Beige kitty keychain"],d:["Orejitas café y mosquetón plateado.","Brown ears and silver clasp."]},
+{id:"capibara",c:"crochet",f:"fotos/capibaras.jpg",n:["Llavero capibara","Capybara keychain"],d:["La capibara tejida más tierna, con argolla dorada.","The cutest crochet capybara, gold ring."]},
+{id:"mochila-tricolor",c:"crochet",f:"fotos/capibaras-tricolor.jpg",n:["Mochilita tricolor","Tricolor mini bag"],d:["Llavero mochila amarillo, azul y rojo con cordones.","Yellow, blue and red mini bag keychain."]},
+{id:"mochilas-mini",c:"crochet",f:"fotos/mochilas-mini.jpg",n:["Mini mochilas llavero","Mini bag keychains"],d:["En muchos colores: rosado, fucsia, menta, beige, azul.","Many colors: pink, fuchsia, mint, beige, blue."]},
+{id:"girasol",c:"crochet",f:"fotos/girasoles-llavero.jpg",n:["Llavero girasol","Sunflower keychain"],d:["Girasol tejido con hoja y mostacillas.","Crochet sunflower with leaf and beads."]},
+{id:"espejo",c:"crochet",f:"fotos/espejo.jpg",n:["Espejo con girasoles tejidos","Mirror with crochet sunflowers"],d:["Pequeños detalles que iluminan tu día. Ideal para regalar.","Little details that brighten your day. Perfect gift."]},
+{id:"strap",c:"strap",f:"fotos/straps.jpg",n:["Strap para celular","Phone strap"],d:["Cuentas de colores y dijes. Escoge tu color favorito.","Colorful beads and charms. Pick your color."]},
+{id:"strap-mariquita",c:"strap",f:"fotos/flyer-strap.jpg",n:["Strap mariquita","Ladybug strap"],d:["Rojo, amarillo y verde con dije de mariquita.","Red, yellow and green with ladybug charm."]},
+{id:"letra-resina",c:"resina",f:"fotos/resina-letras.jpg",n:["Llavero letra en resina","Resin letter keychain"],d:["Tu inicial o nombre con brillos y escarcha.","Your initial or name with glitter."]},
+{id:"placa",c:"resina",f:"",n:["Llavero para placa","License-plate keychain"],d:["Con la placa de tu moto o carro. Personalízalo abajo.","With your bike or car plate. Customize it below."]},
+{id:"denario",c:"fe",f:"fotos/denarios.jpg",n:["Denario de cristal","Crystal rosary bracelet"],d:["Cristales con cruces de madera y crucifijo dorado.","Crystals, wooden crosses and golden crucifix."]},
+{id:"velas",c:"hogar",f:"",n:["Velas aromatizantes","Scented candles"],d:["Velas aromatizantes y decorativas.","Scented and decorative candles."]},
+{id:"pines",c:"hogar",f:"",n:["Pines","Pins"],d:["Pines para bolsos, gorras y chaquetas.","Pins for bags, caps and jackets."]}];
+const COL=[["Rosa","#e46a9c"],["Lila","#9b6cc9"],["Turquesa","#3bb3b0"],["Dorado","#c9962b"],["Rojo","#d6453d"],["Verde","#6a9a4c"],["Cristal","#9fb7c9"]];
+const GAL=["gato-gris","flyer-espejo","straps","capibaras-tricolor","denarios","resina-letras","gato-beige","collage","flyer-strap","girasoles-llavero","mochilas-mini","espejo"];
+const visit=+(localGet("cl_v")||0);localSet("cl_v",visit+1);
+let L=localGet("cl_lang")||"es",cat="todos",col=0,cart=[];
+try{cart=JSON.parse(localStorage.getItem("cl_cart")||"[]")}catch(e){}
+function localGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function localSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+const t=k=>T[L][k];
+function idioma(l){L=l;localSet("cl_lang",l);document.documentElement.lang=l;bES.classList.toggle("on",l=="es");bEN.classList.toggle("on",l=="en");
+ document.querySelectorAll("[data-t]").forEach(e=>e.innerHTML=t(e.dataset.t));
+ cNom.placeholder=t("cNom");cDir.placeholder=t("cDir");
+ cinta.innerHTML=[...t("cinta"),...t("cinta")].map(x=>"<span>"+x+"</span>").join("");
+ fTipo.innerHTML=t("tipos").map((x,i)=>"<option value="+i+">"+x+"</option>").join("");
+ filtros();pintar();hoy();lic();prev();carrito()}
+// hero
+const sl=[...slides.children];let si=0;dots.innerHTML=sl.map(()=>"<i></i>").join("");
+function slide(){sl.forEach((s,i)=>s.classList.toggle("on",i==si));[...dots.children].forEach((d,i)=>d.classList.toggle("on",i==si));si=(si+1)%sl.length}
+slide();setInterval(slide,4200);
+// hora Colombia
+function bog(){return new Date(new Date().toLocaleString("en-US",{timeZone:"America/Bogota"}))}
+function hoy(){const d=bog();
+ hoyFecha.textContent=d.toLocaleDateString(L=="es"?"es-CO":"en-US",{weekday:"long",day:"numeric",month:"long",year:"numeric"}).replace(/^./,m=>m.toUpperCase());
+ const conF=P.filter(p=>p.f);
+ const p=conF[(d.getDate()+visit)%conF.length];hoyImg.src=p.f;hoyNom.textContent=p.n[L=="es"?0:1];hoyDesc.textContent=p.d[L=="es"?0:1];
+ const fr=t("frases");hoyFrase.textContent=fr[(d.getDate()*3+visit)%fr.length];cuenta_();}
+function cuenta_(){const d=bog();let nav=new Date(d.getFullYear(),11,24,18);if(d>nav)nav=new Date(d.getFullYear()+1,11,24,18);
+ const ms=nav-d,D=Math.floor(ms/864e5),H=Math.floor(ms%864e5/36e5),M=Math.floor(ms%36e5/6e4);
+ cuenta.innerHTML=`<div><b>${D}</b><span>${t("dias")}</span></div><div><b>${H}</b><span>${t("horas")}</span></div><div><b>${M}</b><span>${t("min")}</span></div>`;
+ reloj.textContent=d.toLocaleTimeString(L=="es"?"es-CO":"en-US",{hour:"2-digit",minute:"2-digit"})+" · UTC-5"}
+setInterval(cuenta_,30000);
+// catálogo
+function filtros(){const k=["todos",...Object.keys(CATS)];
+ document.getElementById("filtros").innerHTML=k.map(c=>`<button class="${c==cat?"on":""}" onclick="cat='${c}';filtros();pintar()">${c=="todos"?t("todos"):CATS[c][L=="es"?0:1]}</button>`).join("")}
+function pintar(){const i=L=="es"?0:1;
+ grid.innerHTML=P.filter(p=>cat=="todos"||p.c==cat).map(p=>`<div class="prod"><div class="ph">${p.f?`<img src="${p.f}" alt="${p.n[i]}" loading="lazy">`:`<div class="ph-t">${p.n[i]}</div>`}<span class="tag">${CATS[p.c][i]}</span></div><div class="bd"><h3>${p.n[i]}</h3><p>${p.d[i]}</p><span class="pr">${t("precio")}</span><button onclick="add('${p.id}')">${t("agregar")}</button></div></div>`).join("");
+ obs()}
+function obs(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target)}}),{threshold:.1});
+ document.querySelectorAll(".prod").forEach((e,k)=>{e.style.transitionDelay=(k%4)*80+"ms";io.observe(e)})}
+// personalizador
+colores.innerHTML=COL.map((c,i)=>`<button style="background:${c[1]}" onclick="col=${i};prev()" aria-label="${c[0]}"></button>`).join("");
+function prev(){const n=(fNom.value||"Cindy").trim(),ti=+fTipo.value||0;
+ [...colores.children].forEach((b,i)=>b.classList.toggle("on",i==col));
+ disco.style.background=`radial-gradient(circle at 30% 25%,#fff8 0,transparent 40%),linear-gradient(135deg,${COL[col][1]},${COL[col][1]}aa)`;
+ disco.style.borderRadius=ti==2?"26px":"50%";disco.style.width=ti==2?"260px":"220px";disco.style.height=ti==2?"150px":"220px";
+ dTxt.style.fontFamily=ti==2?"Poppins":"'Dancing Script'";dTxt.style.fontWeight=ti==2?"800":"700";
+ dTxt.textContent=ti==1?n.charAt(0).toUpperCase():ti==2?n.toUpperCase():n;dSub.textContent=ti==1?n:""}
+function addPerso(){const ti=+fTipo.value||0,n=(fNom.value||"").trim();if(!n)return fNom.focus();
+ cart.push({id:"perso-"+Date.now(),name:`${t("perso")}: ${t("tipos")[ti]} · "${n}" · ${COL[col][0]}${fNota.value?" · "+fNota.value:""}`,f:"fotos/resina-letras.jpg",q:1});guardar();toast()}
+// carrito
+function add(id){const p=P.find(x=>x.id==id),e=cart.find(x=>x.id==id);if(e)e.q++;else cart.push({id,q:1,f:p.f});guardar();toast()}
+function nom(it){const p=P.find(x=>x.id==it.id);return p?p.n[L=="es"?0:1]:it.name}
+function guardar(){localSet("cl_cart",JSON.stringify(cart));carrito()}
+function carrito(){cartN.textContent=cart.reduce((a,b)=>a+b.q,0);
+ items.innerHTML=cart.length?cart.map((it,i)=>`<div class="item">${it.f?`<img src="${it.f}" alt="">`:`<div class="mini"></div>`}<div class="n">${nom(it)}</div><div class="q"><button onclick="qty(${i},-1)">−</button><b>${it.q}</b><button onclick="qty(${i},1)">+</button></div></div>`).join(""):`<p style="color:#8a7570">${t("vacio")}</p>`}
+function qty(i,d){cart[i].q+=d;if(cart[i].q<1)cart.splice(i,1);guardar()}
+function vaciar(){cart=[];guardar()}
+function abrir(){carrito();cart_.classList.add("on")}
+const cart_=document.getElementById("cart");function cerrar(){cart_.classList.remove("on")}
+function enviar(){if(!cart.length)return hola();
+ let m=t("ped")+"\n\n"+cart.map(it=>`• ${it.q} x ${nom(it)}`).join("\n");
+ if(cNom.value)m+=`\n\n${t("nombre")}: ${cNom.value}`;if(cDir.value)m+=`\n${t("entrega")}: ${cDir.value}`;
+ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(m),"_blank")}
+function hola(){window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(t("hola")),"_blank")}
+function toast(){const e=document.getElementById("toast");e.textContent=t("ok");e.classList.add("on");setTimeout(()=>e.classList.remove("on"),1500)}
+// galería
+gal.innerHTML=GAL.map(g=>`<img src="fotos/${g}.jpg" alt="" loading="lazy" onclick="lbImg.src=this.src;lb.classList.add('on')">`).join("");
+// licencia 6 meses
+function lic(){const v=bog()>new Date(2027,4,6,23,59);const e=document.getElementById("lic");e.textContent=v?t("licV"):t("lic");e.classList.toggle("v",v)}
+idioma(L);
+if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
+</script>
+</body>
+</html>
